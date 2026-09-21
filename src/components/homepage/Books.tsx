@@ -1,6 +1,7 @@
 import React from "react";
 import BookCard from "../shared/BookCard";
 import { IBook } from "@/types/books-type";
+import Link from "next/link";
 
 const getBook = async () => {
   try{
@@ -22,7 +23,7 @@ const Books = async () => {
       {/* Section Heading */}
       <div className="mb-10 text-center">
         <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-amber-600">
-          Explore Our Collection
+          Explore Popular Collection
         </p>
 
         <h2 className="text-3xl font-bold text-[#131313] md:text-4xl">
@@ -41,6 +42,7 @@ const Books = async () => {
           <BookCard key={book.bookId} book={book}></BookCard>
         ))}
       </div>
+      <div className=" text-center my-5"><Link href="/books" className="link-hover">Show more</Link></div>
     </section>
   );
 };

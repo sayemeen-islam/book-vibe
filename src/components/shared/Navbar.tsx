@@ -64,8 +64,8 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{Links}</ul>
         </div>
         <div className="navbar-end gap-2">
-          <a className=" btn btn-sm btn-success rounded-md ">Sign In</a>
-          <a className="btn btn-sm btn-warning rounded-md">Sign Up</a>
+          <a className=" btn btn-sm border-0 bg-[#131313]  text-white hover:bg-amber-600 rounded-md ">Sign Up</a>
+          <a className="btn btn-sm btn-outline rounded-lg  rounded-md" >Sign In</a>
         </div>
       </div>
     </nav>
