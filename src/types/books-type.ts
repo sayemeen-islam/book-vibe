@@ -4,6 +4,7 @@ export interface IBook{
     bookName: string,
     author: string,
     image: string,
+    review:string
     totalPages: number,
     rating: number,
     category: string,

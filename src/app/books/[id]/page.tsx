@@ -19,10 +19,10 @@ const getBook = async () => {
 };
 const BookDetailsPage = async ({ params }: IBookDetailsPageProps) => {
   const { id } = await params;
-  const booksData = await getBook();
+  const booksData:IBook[] = await getBook();
   const book = booksData.find(
     (book: IBook) => String(book.bookId) === String(id),
-  );
+  ) as IBook
   return (
     <div className="container mx-auto my-16 px-4">
       <div className="overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-lg">
